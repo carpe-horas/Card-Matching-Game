@@ -4,7 +4,7 @@
 
 카드 짝맞추기 게임은 기억력을 테스트하는 간단한 게임으로 화면에 표시된 카드를 뒤집어 그림을 맞추는 게임. 점수를 획득하며 레벨이 올라갈수록 난이도가 증가.  
 <br>
-***[카드짝맞추기게임 하러가기 Click!](https://carpe-horas.github.io/Maze-Escape-Game/)***
+***[카드짝맞추기게임 하러가기 Click!](https://carpe-horas.github.io/Card-Matching-Game/)***
 
 ![카드짝맞추기게임 미리보기](images/game.png)  
 
