@@ -1,0 +1,94 @@
+/* 전체 화면 */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #cef1fc, #fac9c9, #faeec9);
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 게임 종료 컨테이너 */
+.gameover-container {
+    margin-top: -250px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 애니메이션 (부드러운 등장 효과) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 42px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.5);
+}
+
+/* 점수 글자 */
+.final-score {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* 점수 표시 */
+#final-score {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5733;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* 다시 시작 버튼 */
+.restart-button {
+    font-size: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 버튼 호버 효과 */
+.restart-button:hover {
+    background: linear-gradient(135deg, #ff5722, #d84315);
+    box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+    transform: scale(1.05);
+}
+
+/* 버튼 클릭 효과 */
+.restart-button:active {
+    transform: scale(0.95);
+}

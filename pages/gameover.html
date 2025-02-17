@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 종료</title>
+    <link rel="stylesheet" href="../css/gameover.css">
+</head>
+<body>
+    <div class="gameover-container">
+        <h1>게임 종료!</h1>
+        <p class="final-score">최종 점수 : <span id="final-score"></span></p>
+        <button class="restart-button" onclick="restartGame()">다시하기</button>
+
+    </div>
+
+    <script>
+        function restartGame() {
+            window.location.href = "../index.html";
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("final-score").textContent = localStorage.getItem("score") || 0;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* 전체 화면 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 컨텐츠가 위쪽에 위치하도록 조정 */
+    align-items: center;
+    color: white;
+}
+
+/* 게임 보드 */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* 게임 정보 (레벨, 타이머, 점수) */
+.game-info {
+    color: #ff9800;
+}
+
+
+/* 카드 스타일 */
+.card {
+    width: 80px;
+    height: 100px;
+    background-color: #ddd;
+    background: linear-gradient(135deg, #ffcc80, #ff9800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;  /* 이모지 크기 */
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ffa726, #ff7043);
+}
+
+/* 맞춘 카드 */
+.matched {
+    background: linear-gradient(135deg, #f99a46, #ee2727);
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.5);
+    animation: matchEffect 0.4s ease-in-out;
+}
+
+/* 숨김 클래스 */
+.hidden {
+    display: none;
+}
+
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+/* 맞춘 카드 애니메이션 */
+@keyframes matchEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

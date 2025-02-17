@@ -1,0 +1,79 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 메인 컨테이너 */
+.container {
+    margin-top: -250px;
+    background: rgba(0, 0, 0, 0.7); /* 반투명 블랙 배경 */
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 애니메이션 (부드러운 등장 효과) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 36px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+/* 설명 텍스트 */
+p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* 시작 버튼 */
+.start-button {
+    font-size: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* 버튼 호버 효과 */
+.start-button:hover {
+    background: linear-gradient(135deg, #ff5722, #d84315);
+    box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+    transform: scale(1.05);
+}
+
+/* 버튼 클릭 효과 */
+.start-button:active {
+    transform: scale(0.95);
+}
