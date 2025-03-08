@@ -6,7 +6,7 @@
 <br>
 ***[카드짝맞추기게임 하러가기 Click!](https://carpe-horas.github.io/Card-Matching-Game/)***
 
-![카드짝맞추기게임 미리보기](images/game.png)  
+![카드짝맞추기게임 미리보기](images/game.gif)  
 
 <br>
 
@@ -18,7 +18,7 @@
 - 점수 시스템 : 카드 한 쌍을 맞출 때마다 점수 증가  
 <br>
 
-## 사용된 로직 및 알고리즘
+## 핵심 게임 로직
 1. 카드 배치 및 섞기 - Fisher-Yates Shuffle 알고리즘  
 - 카드의 위치를 랜덤으로 섞기 위해 Fisher-Yates Shuffle을 사용
 - 카드 배열 생성 후 무작위로 섞은 후, 현재 위치의 카드와 무작위로 선택된 카드의 위치를 교환하는 방식으로 동작
@@ -65,4 +65,4 @@
  ├── 📄 index.html           # 메인 페이지 (게임 시작 화면)
  ┗── 📄 README.md           
 ```
-
+<br>
